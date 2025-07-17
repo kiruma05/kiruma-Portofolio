@@ -54,8 +54,9 @@ function Hero() {
           </a>
         </span>
         <p className={styles.description}>
-          Software Engineer passionate about building scalable full-stack web apps with React, Angular, Node.js, and Spring Boot. Enthusiastic about DevOps, Cloud APIs, and AI integration.
-        </p>
+  I'm a detail-oriented Software Engineer specializing in full-stack web development, with hands-on experience in building robust and scalable applications using React, Angular, Node.js, and Spring Boot. I’ve contributed to real-world solutions ranging from e-learning platforms for children with hearing impairments to enterprise systems for government agencies. My technical toolkit extends to DevOps (Docker, Kubernetes, Jenkins), cloud integration (RESTful/GraphQL APIs), and database systems like PostgreSQL and MongoDB. I’m passionate about solving complex problems, writing clean and maintainable code, and continuously learning to stay ahead in fast-evolving tech ecosystems.
+</p>
+
         <a href={CV} download>
           <button className="hover">Download CV</button>
         </a>
