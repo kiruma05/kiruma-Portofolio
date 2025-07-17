@@ -1,5 +1,5 @@
 import styles from "./ProjectsStyles.module.css";
-import elearning from "../../assets/elearning.png";
+/import elearning from "../../assets/elearning.png";
 import sombyo from "../../assets/sombyo.png";
 import vitotech from "../../assets/vitotech.png";
 import roadSystem from "../../assets/trac1.png";
