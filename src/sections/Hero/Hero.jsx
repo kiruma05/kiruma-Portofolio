@@ -25,7 +25,7 @@ function Hero() {
         <img
           src={heroImg}
           className={styles.hero}
-          alt="Profile picture of Harris Johnsen"
+          alt="Profile picture of Frank Kiruma"
         />
         <img
           className={styles.colorMode}
@@ -36,28 +36,27 @@ function Hero() {
       </div>
       <div className={styles.info}>
         <h1>
-          frank
+          Frank
           <br />
-          kiruma
+          Kiruma
         </h1>
-        <h2>Full Stack Developer</h2>
+        <h2>Full Stack Developer | React & Spring Boot</h2>
         <span>
-          <a href="https://twitter.com/" target="_blank">
+          <a href="https://twitter.com/kiruma05" target="_blank" rel="noopener noreferrer">
             <img src={twitterIcon} alt="Twitter icon" />
           </a>
-          <a href="https://github.com/" target="_blank">
+          <a href="https://github.com/kiruma05" target="_blank" rel="noopener noreferrer">
             <img src={githubIcon} alt="Github icon" />
           </a>
-          <a href="https://linkedin.com/" target="_blank">
+          <a href="https://linkedin.com/in/frankkiruma" target="_blank" rel="noopener noreferrer">
             <img src={linkedinIcon} alt="Linkedin icon" />
           </a>
         </span>
         <p className={styles.description}>
-          With a passion for developing modern React web apps for commercial
-          businesses.
+          Software Engineer passionate about building scalable full-stack web apps with React, Angular, Node.js, and Spring Boot. Enthusiastic about DevOps, Cloud APIs, and AI integration.
         </p>
         <a href={CV} download>
-          <button className="hover">Resume</button>
+          <button className="hover">Download CV</button>
         </a>
       </div>
     </section>
