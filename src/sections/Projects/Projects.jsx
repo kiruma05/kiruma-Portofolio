@@ -1,11 +1,9 @@
 import styles from "./ProjectsStyles.module.css";
-import viberr from "../../assets/narco1.png";
-import freshBurger from "../../assets/temeasa2.png";
-import hipsster from "../../assets/temesa3.png";
-import fitLift from "../../assets/temesa1.jpg";
-import trac1 from "../../assets/trac1.png";
-import trac2 from "../../assets/trac2.png";
-import trac3 from "../../assets/trac3.png";
+import elearning from "../../assets/elearning.png";
+import sombyo from "../../assets/sombyo.png";
+import vitotech from "../../assets/vitotech.png";
+import roadSystem from "../../assets/trac1.png";
+import animalSystem from "../../assets/narco1.png";
 import ProjectCard from "../../common/ProjectCard";
 
 function Projects() {
@@ -14,58 +12,39 @@ function Projects() {
       <h1 className="sectionTitle">Projects</h1>
       <div className={styles.projectsContainer}>
         <ProjectCard
-          src={trac2}
-          link="https://www.tractz.org/"
-          h3="trac2"
-          p="Road accident prevantation website"
+          src={elearning}
+          h3="Smart E-Learning for Kids with Hearing Impairments"
+          p="An accessible learning platform with separate student and instructor portals."
+          link="http://64.227.142.90/onboarding"
         />
         <ProjectCard
-          src={trac1}
-          link="https://www.tractz.org/"
-          h3="trac1"
-          p="Fitness App"
+          src={sombyo}
+          h3="Sombyo Website"
+          p="A clean, modern marketing site for a traditional medicine company."
+          link="https://www.sombyo.co.tz/"
         />
         <ProjectCard
-          src={trac3}
-          link="https://www.tractz.org/"
-          h3="trac3"
-          p="Road accident prevantation website its interface"
+          src={vitotech}
+          h3="VitoTech Company Website"
+          p="Corporate site for VitoTech – showcasing services and products."
+          link="https://vitohub.org/"
         />
         <ProjectCard
-          src={viberr}
-          //link="https://github.com/Ade-mir/company-landing-page-2"
-          h3="Viberr"
-          p="Streaming App"
+          src={roadSystem}
+          h3="Road Accident Prevention System"
+          p="A public awareness website with tracking and educational interface."
+          link="https://artz-seven.vercel.app/"
         />
         <ProjectCard
-          src={freshBurger}
-          //link="https://github.com/Ade-mir/company-landing-page-2"
-          h3="Fresh Burger"
-          p="Hamburger Restaurant"
+          src={animalSystem}
+          h3="Animal Management System"
+          p="Software for managing animal records and notifications – built at NARCO."
+          link="https://github.com/kiruma05/Animal-Management-Sytem"
         />
         <ProjectCard
-          src={hipsster}
-          //link="https://github.com/Ade-mir/company-landing-page-2"
-          h3="Hipsster"
-          p="Glasses Shop"
-        />
-        <ProjectCard
-          src={fitLift}
-          //link="https://github.com/Ade-mir/company-landing-page-2"
-          h3="FitLift"
-          p="Fitness App"
-        />
-        <ProjectCard
-          src={fitLift}
-          //link="https://github.com/Ade-mir/company-landing-page-2"
-          h3="FitLift"
-          p="Fitness App"
-        />
-        <ProjectCard
-          src={fitLift}
-          //link="https://github.com/Ade-mir/company-landing-page-2"
-          h3="FitLift"
-          p="Fitness App"
+          src={vitotech}
+          h3="Online Pizza Delivery"
+          p="A responsive food ordering system with full cart and checkout flow."
         />
       </div>
     </section>
