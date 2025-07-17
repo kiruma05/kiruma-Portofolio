@@ -36,11 +36,12 @@ function Hero() {
       </div>
       <div className={styles.info}>
         <h1>
-          Frank
+          Frank Joseph
           <br />
           Kiruma
         </h1>
-        <h2>Full Stack Developer | React & Spring Boot</h2>
+        <h2>Full Stack Software Engineer | React, Angular, Node.js & Spring Boot</h2>
+
         <span>
           <a href="https://twitter.com/kiruma05" target="_blank" rel="noopener noreferrer">
             <img src={twitterIcon} alt="Twitter icon" />
