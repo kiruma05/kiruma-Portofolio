@@ -40,7 +40,9 @@ function Hero() {
           <br />
           Kiruma
         </h1>
-        <h2>Full Stack Software Engineer | React, Angular, Node.js & Spring Boot</h2>
+        <h2>Full Stack Software Engineer & Mobile App Developer | Flutter, React, Spring Boot
+</h2>
+
 
         <span>
           <a href="https://twitter.com/kiruma05" target="_blank" rel="noopener noreferrer">
@@ -54,8 +56,16 @@ function Hero() {
           </a>
         </span>
         <p className={styles.description}>
-  I'm a detail-oriented Software Engineer specializing in full-stack web development, with hands-on experience in building robust and scalable applications using React, Angular, Node.js, and Spring Boot. I’ve contributed to real-world solutions ranging from e-learning platforms for children with hearing impairments to enterprise systems for government agencies. My technical toolkit extends to DevOps (Docker, Kubernetes, Jenkins), cloud integration (RESTful/GraphQL APIs), and database systems like PostgreSQL and MongoDB. I’m passionate about solving complex problems, writing clean and maintainable code, and continuously learning to stay ahead in fast-evolving tech ecosystems.
+  I'm a passionate Software Engineer with expertise in both full-stack and mobile application development.
+  I build robust, scalable solutions using React, Angular, Node.js, and Spring Boot—and I also specialize in
+  creating high-performance cross-platform mobile apps with Flutter (Dart), Java, and Firebase.  
+  My portfolio includes real-world projects such as an inclusive e-learning platform for children with hearing
+  impairments, enterprise systems for NARCO and FADEMO, and a car rental app with booking, role-based access,
+  and cloud integration.  
+  I’m experienced with technologies like SQLite, Hive, RESTful APIs, Firebase Authentication, and CI/CD for mobile.
+  I enjoy solving meaningful problems through thoughtful code, great UI/UX, and scalable system design.
 </p>
+
 
         <a href={CV} download>
           <button className="hover">Download CV</button>
