@@ -21,9 +21,27 @@ function Skills() {
         <SkillList src={checkMarkIcon} skill="PHP" />
         <SkillList src={checkMarkIcon} skill="C++" />
         <SkillList src={checkMarkIcon} skill="C#" />
+        <SkillList src={checkMarkIcon} skill="TypeScript" />
+        <SkillList src={checkMarkIcon} skill="Dart" />
         
       </div>
       <hr />
+
+      {/* Mobile Development */}
+<h2 className="sectionTitle">Mobile Development</h2>
+<div className={styles.skillList}>
+  <SkillList src={checkMarkIcon} skill="Flutter" />
+  <SkillList src={checkMarkIcon} skill="Dart" />
+  <SkillList src={checkMarkIcon} skill="Java (Android)" />
+  <SkillList src={checkMarkIcon} skill="Firebase (Auth, DB, Notifications)" />
+  <SkillList src={checkMarkIcon} skill="SQLite" />
+  <SkillList src={checkMarkIcon} skill="Hive" />
+  <SkillList src={checkMarkIcon} skill="Material Design" />
+  <SkillList src={checkMarkIcon} skill="Cupertino Widgets" />
+  <SkillList src={checkMarkIcon} skill="Provider (State Management)" />
+  <SkillList src={checkMarkIcon} skill="CI/CD (Codemagic, GitHub Actions)" />
+</div>
+<hr />
 
       {/* Frontend */}
       <h2 className="sectionTitle">Frontend Technologies</h2>
