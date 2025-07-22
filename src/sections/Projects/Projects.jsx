@@ -3,6 +3,7 @@ import elearning from "../../assets/ekids.png";
 //import elearning2 from "../../assets/loginn.png";
 import sombyo from "../../assets/sombyo.png";
 import vitotech from "../../assets/vito.png";
+import vitotech1 from "../../assets/mobile1.jpeg";
 import roadSystem from "../../assets/trac1.png";
 import animalSystem from "../../assets/narco1.png";
 import ProjectCard from "../../common/ProjectCard";
@@ -12,6 +13,11 @@ function Projects({ src, images = [], h3, p, link }) {
     <section id="projects" className={styles.container}>
       <h1 className="sectionTitle">Projects</h1>
       <div className={styles.projectsContainer}>
+        <ProjectCard
+          src={vitotech1}
+          h3="vitotech mobile application offering rating services"
+          p="Official application for VitoTech, showcasing our software development services and expertise. and expiriance team working on various projects."
+        />
         <ProjectCard
           src={vitotech}
           h3="Our tech website offering software development services"
