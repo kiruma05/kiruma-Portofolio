@@ -1,59 +1,78 @@
-import styles from "./ProjectsStyles.module.css";
-import elearning from "../../assets/ekids.png";
-//import elearning2 from "../../assets/loginn.png";
-import sombyo from "../../assets/sombyo.png";
-import vitotech from "../../assets/vito.png";
-import vitotech1 from "../../assets/mobile1.jpeg";
-import roadSystem from "../../assets/trac1.png";
-import animalSystem from "../../assets/narco1.png";
-import ProjectCard from "../../common/ProjectCard";
+import styles from './ProjectsStyles.module.css';
+import elearning from '../../assets/ekids.png';
+import sombyo from '../../assets/sombyo.png';
+import vitotech from '../../assets/vito.png';
+import vitotech1 from '../../assets/mobile1.jpeg';
+import roadSystem from '../../assets/trac1.png';
+import animalSystem from '../../assets/narco1.png';
+import ProjectCard from '../../common/ProjectCard';
 
-function Projects({ src, images = [], h3, p, link }) {
+const projects = [
+  {
+    src: vitotech1,
+    title: 'VitoTech Mobile App',
+    description:
+      'Official mobile application for VitoTech offering rating services and showcasing our software development expertise.',
+    tags: ['Flutter', 'Dart', 'Firebase', 'REST API'],
+  },
+  {
+    src: vitotech,
+    title: 'VitoTech Company Website',
+    description:
+      'Corporate website showcasing VitoTech\'s software development services, team expertise, and portfolio.',
+    tags: ['React', 'Node.js', 'CSS3'],
+    link: 'https://vitohub.org/',
+  },
+  {
+    src: elearning,
+    title: 'E-Learning for Hearing Impaired',
+    description:
+      'Inclusive learning platform with student and instructor portals, designed for children with hearing impairments.',
+    tags: ['React', 'Spring Boot', 'PostgreSQL', 'Accessibility'],
+    link: 'http://64.227.142.90/onboarding',
+  },
+  {
+    src: sombyo,
+    title: 'Sombyo Financial Platform',
+    description:
+      'Financial services website for micro-loan management serving small businesses within the community.',
+    tags: ['Next.js', 'Tailwind', 'Node.js'],
+    link: 'https://www.sombyo.co.tz/',
+  },
+  {
+    src: roadSystem,
+    title: 'Road Safety Awareness System',
+    description:
+      'Public awareness platform with accident tracking, educational resources, and interactive interface.',
+    tags: ['React', 'Vercel', 'REST API', 'Maps'],
+    link: 'https://artz-seven.vercel.app/',
+  },
+  {
+    src: animalSystem,
+    title: 'NARCO Animal Management',
+    description:
+      'Enterprise system for managing livestock records, notifications, and department-level reporting at NARCO.',
+    tags: ['Spring Boot', 'PostgreSQL', 'Java', 'REST API'],
+    link: 'https://github.com/kiruma05/Animal-Management-Sytem',
+  },
+];
+
+function Projects() {
   return (
     <section id="projects" className={styles.container}>
-      <h1 className="sectionTitle">Projects</h1>
-      <div className={styles.projectsContainer}>
-        <ProjectCard
-          src={vitotech1}
-          h3="vitotech mobile application offering rating services"
-          p="Official application for VitoTech, showcasing our software development services and expertise. and expiriance team working on various projects."
-        />
-        <ProjectCard
-          src={vitotech}
-          h3="Our tech website offering software development services"
-          p="Official website for VitoTech, showcasing our software development services and expertise. and expiriance team working on various projects."
-        />
-        <ProjectCard
-          src={elearning}
-          h3="Smart E-Learning for Kids with Hearing Impairments"
-          p="An accessible learning platform with separate student and instructor portals. and is for kids with hearing impairments. visual and interactive learning experience."
-          link="http://64.227.142.90/onboarding"
-        />
-        <ProjectCard
-          src={sombyo}
-          h3="Sombyo Website"
-          p="financial services company offering loans for small business withing the society."
-          link="https://www.sombyo.co.tz/"
-        />
-        <ProjectCard
-          src={vitotech}
-          h3="VitoTech Company Website"
-          p="Corporate site for VitoTech – showcasing services and products."
-          link="https://vitohub.org/"
-        />
-        <ProjectCard
-          src={roadSystem}
-          h3="Road Accident Prevention System"
-          p="A public awareness website with tracking and educational interface."
-          link="https://artz-seven.vercel.app/"
-        />
-        <ProjectCard
-          src={animalSystem}
-          h3="Animal Management System"
-          p="Software for managing animal records and notifications – built at NARCO."
-          link="https://github.com/kiruma05/Animal-Management-Sytem"
-        />
-        
+      <h1 className="sectionTitle">Featured Projects</h1>
+      <div className={styles.grid}>
+        {projects.map((project, index) => (
+          <ProjectCard
+            key={index}
+            src={project.src}
+            title={project.title}
+            description={project.description}
+            tags={project.tags}
+            link={project.link}
+            index={index}
+          />
+        ))}
       </div>
     </section>
   );

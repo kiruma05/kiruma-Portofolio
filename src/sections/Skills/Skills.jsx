@@ -1,131 +1,78 @@
-import styles from "./SkillsStyles.module.css";
-import checkMarkIconDark from "../../assets/checkmark-dark.svg";
-import checkMarkIconLight from "../../assets/checkmark-light.svg";
-import SkillList from "../../common/SkillList";
-import { useTheme } from "../../common/ThemeContext";
+import styles from './SkillsStyles.module.css';
+
+const skillCategories = [
+  {
+    title: 'Languages',
+    icon: '⟨/⟩',
+    skills: ['Java', 'JavaScript', 'TypeScript', 'Python', 'Dart', 'C++', 'C#', 'PHP'],
+  },
+  {
+    title: 'Mobile',
+    icon: '📱',
+    skills: ['Flutter', 'Android (Java)', 'Firebase', 'SQLite', 'Hive', 'Provider', 'Material Design'],
+  },
+  {
+    title: 'Frontend',
+    icon: '🎨',
+    skills: ['React', 'Next.js', 'Angular', 'Vue.js', 'Tailwind CSS', 'Sass', 'HTML5', 'CSS3'],
+  },
+  {
+    title: 'Backend',
+    icon: '⚙️',
+    skills: ['Node.js', 'Express.js', 'Spring Boot', 'PHP', 'Laravel', 'REST APIs', 'GraphQL', 'FastAPI'],
+  },
+  {
+    title: 'Data Engineering',
+    icon: '🔧',
+    skills: ['Apache NiFi', 'Apache Spark', 'Apache Airflow', 'Marquez', 'Apache Ranger', 'Apache Superset', 'MinIO', 'MLflow', 'Griffin', 'FastAPI'],
+  },
+  {
+    title: 'Payment Gateways',
+    icon: '💳',
+    skills: ['Stripe', 'PayPal', 'M-Pesa', 'Flutterwave', 'Paystack', 'Razorpay'],
+  },
+  {
+    title: 'Databases',
+    icon: '🗄️',
+    skills: ['PostgreSQL', 'MySQL', 'MongoDB', 'Firebase', 'Redis', 'SQLite', 'Oracle'],
+  },
+  {
+    title: 'DevOps & Cloud',
+    icon: '☁️',
+    skills: ['Docker', 'Kubernetes', 'AWS', 'Azure', 'GCP', 'Jenkins', 'CI/CD', 'Git'],
+  },
+  {
+    title: 'AI & Data',
+    icon: '🧠',
+    skills: ['Machine Learning', 'Deep Learning', 'NLP', 'Data Science', 'Big Data', 'Data Mining'],
+  },
+];
 
 function Skills() {
-  const { theme } = useTheme();
-  const checkMarkIcon = theme === "light" ? checkMarkIconLight : checkMarkIconDark;
-
   return (
     <section id="skills" className={styles.container}>
-      <h1 className="sectionTitle">Skills</h1>
+      <h1 className="sectionTitle">Tech Stack</h1>
 
-      {/* Programming Languages */}
-      <h2 className="sectionTitle">Programming Languages</h2>
-      <div className={styles.skillList}>
-        <SkillList src={checkMarkIcon} skill="Java" />
-        <SkillList src={checkMarkIcon} skill="JavaScript" />
-        <SkillList src={checkMarkIcon} skill="Python" />
-        <SkillList src={checkMarkIcon} skill="PHP" />
-        <SkillList src={checkMarkIcon} skill="C++" />
-        <SkillList src={checkMarkIcon} skill="C#" />
-        <SkillList src={checkMarkIcon} skill="TypeScript" />
-        <SkillList src={checkMarkIcon} skill="Dart" />
-        
-      </div>
-      <hr />
-
-      {/* Mobile Development */}
-<h2 className="sectionTitle">Mobile Development</h2>
-<div className={styles.skillList}>
-  <SkillList src={checkMarkIcon} skill="Flutter" />
-  <SkillList src={checkMarkIcon} skill="Dart" />
-  <SkillList src={checkMarkIcon} skill="Java (Android)" />
-  <SkillList src={checkMarkIcon} skill="Firebase (Auth, DB, Notifications)" />
-  <SkillList src={checkMarkIcon} skill="SQLite" />
-  <SkillList src={checkMarkIcon} skill="Hive" />
-  <SkillList src={checkMarkIcon} skill="Material Design" />
-  <SkillList src={checkMarkIcon} skill="Cupertino Widgets" />
-  <SkillList src={checkMarkIcon} skill="Provider (State Management)" />
-  <SkillList src={checkMarkIcon} skill="CI/CD (Codemagic, GitHub Actions)" />
-</div>
-<hr />
-
-      {/* Frontend */}
-      <h2 className="sectionTitle">Frontend Technologies</h2>
-      <div className={styles.skillList}>
-        <SkillList src={checkMarkIcon} skill="React.js" />
-        <SkillList src={checkMarkIcon} skill="Angular.js" />
-        <SkillList src={checkMarkIcon} skill="Tailwind CSS" />
-        <SkillList src={checkMarkIcon} skill="Bootstrap CSS" />
-        <SkillList src={checkMarkIcon} skill="HTML" />
-        <SkillList src={checkMarkIcon} skill="CSS" />
-        <SkillList src={checkMarkIcon} skill="Sass" />
-        <SkillList src={checkMarkIcon} skill="jQuery" />
-        <SkillList src={checkMarkIcon} skill="TypeScript" />
-        <SkillList src={checkMarkIcon} skill="Next.js" />
-        <SkillList src={checkMarkIcon} skill="Vue.js" />
-       
-      </div>
-      <hr />
-
-      {/* Backend & Frameworks */}
-      <h2 className="sectionTitle">Backend & Frameworks</h2>
-      <div className={styles.skillList}>
-        <SkillList src={checkMarkIcon} skill="Node.js" />
-        <SkillList src={checkMarkIcon} skill="Express.js" />
-        <SkillList src={checkMarkIcon} skill="Spring Boot" />
-        <SkillList src={checkMarkIcon} skill="Laravel" />
-      </div>
-      <hr />
-
-      {/* Databases */}
-      <h2 className="sectionTitle">Databases</h2>
-      <div className={styles.skillList}>
-        <SkillList src={checkMarkIcon} skill="PostgreSQL" />
-        <SkillList src={checkMarkIcon} skill="MySQL" />
-        <SkillList src={checkMarkIcon} skill="SQL" />
-        <SkillList src={checkMarkIcon} skill="MongoDB" />
-        <SkillList src={checkMarkIcon} skill="Firebase" />
-        <SkillList src={checkMarkIcon} skill="Redis" />
-        <SkillList src={checkMarkIcon} skill="SQLite" />
-        <SkillList src={checkMarkIcon} skill="Oracle Database" />
-
-      </div>
-      <hr />
-
-      {/* DevOps & Tools */}
-      <h2 className="sectionTitle">DevOps & Tools</h2>
-      <div className={styles.skillList}>
-        <SkillList src={checkMarkIcon} skill="Git & GitHub" />
-        <SkillList src={checkMarkIcon} skill="GitLab" />
-        <SkillList src={checkMarkIcon} skill="Docker" />
-        <SkillList src={checkMarkIcon} skill="Kubernetes" />
-        <SkillList src={checkMarkIcon} skill="Jenkins" />
-        <SkillList src={checkMarkIcon} skill="Gradle & Groovy" />
-        <SkillList src={checkMarkIcon} skill="TeamViewer" />
-        <SkillList src={checkMarkIcon} skill="AnyDesk" />
-      </div>
-      <hr />
-
-      {/* APIs & Cloud */}
-      <h2 className="sectionTitle">APIs & Cloud Services</h2>
-      <div className={styles.skillList}>
-        <SkillList src={checkMarkIcon} skill="RESTful APIs" />
-        <SkillList src={checkMarkIcon} skill="GraphQL APIs" />
-        <SkillList src={checkMarkIcon} skill="Cloud & Storage APIs" />
-        <SkillList src={checkMarkIcon} skill="Payment & Billing APIs" />
-        <SkillList src={checkMarkIcon} skill="Communication APIs" />
-
-        <SkillList src={checkMarkIcon} skill="AI & ML APIs" />
-        <SkillList src={checkMarkIcon} skill="Cloud Platforms (AWS, Azure, GCP)" />
-
-      </div>
-      <hr />
-
-      {/* AI & Data */}
-      <h2 className="sectionTitle">AI & Data Technologies</h2>
-      <div className={styles.skillList}>
-        <SkillList src={checkMarkIcon} skill="Data Science" />
-        <SkillList src={checkMarkIcon} skill="Big Data Analytics" />
-        <SkillList src={checkMarkIcon} skill="Data Mining" />
-        <SkillList src={checkMarkIcon} skill="Data Warehousing" />
-        <SkillList src={checkMarkIcon} skill="Machine Learning" />
-        <SkillList src={checkMarkIcon} skill="Deep Learning" />
-        <SkillList src={checkMarkIcon} skill="Natural Language Processing" />
-
+      <div className={styles.grid}>
+        {skillCategories.map((category, index) => (
+          <div
+            key={index}
+            className={`${styles.category} glass-card animate-fadeInUp`}
+            style={{ animationDelay: `${index * 0.1}s` }}
+          >
+            <div className={styles.categoryHeader}>
+              <span className={styles.categoryIcon}>{category.icon}</span>
+              <h3 className={styles.categoryTitle}>{category.title}</h3>
+            </div>
+            <div className={styles.skillChips}>
+              {category.skills.map((skill, i) => (
+                <span key={i} className={styles.chip}>
+                  {skill}
+                </span>
+              ))}
+            </div>
+          </div>
+        ))}
       </div>
     </section>
   );

@@ -1,7 +1,116 @@
+.footer {
+  border-top: 1px solid var(--border-subtle);
+  margin-top: var(--section-gap);
+}
+
 .container {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 48px var(--container-padding) 32px;
+}
+
+.top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 28px;
   text-align: center;
-  p {
-    font-size: 16px;
-    color: var(--footer-text-color);
+}
+
+.logo {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.logoDot {
+  background: var(--gradient-accent);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+}
+
+.links a {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  transition: color var(--transition-fast);
+}
+
+.links a:hover {
+  color: var(--text-primary);
+}
+
+.socials {
+  display: flex;
+  gap: 12px;
+}
+
+.socialLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-full);
+  background: var(--bg-card);
+  border: 1px solid var(--border-light);
+  transition: all var(--transition-fast);
+}
+
+.socialLink img {
+  width: 18px;
+  height: 18px;
+}
+
+.socialLink:hover {
+  border-color: var(--accent-start);
+  background: var(--accent-glow);
+  transform: translateY(-2px);
+}
+
+.divider {
+  height: 1px;
+  background: var(--gradient-accent);
+  opacity: 0.3;
+  margin: 32px 0;
+  border-radius: 1px;
+}
+
+.bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  text-align: center;
+}
+
+.bottom p {
+  font-size: 0.8rem;
+  color: var(--footer-text);
+}
+
+.builtWith {
+  font-size: 0.75rem !important;
+  color: var(--text-muted) !important;
+  opacity: 0.7;
+}
+
+@media (min-width: 768px) {
+  .top {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .bottom {
+    flex-direction: row;
+    justify-content: space-between;
   }
 }

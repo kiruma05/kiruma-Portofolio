@@ -1,0 +1,133 @@
+.container {
+    max-width: var(--container-max);
+    margin: 0 auto;
+    padding: var(--section-gap) var(--container-padding);
+}
+
+.timeline {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding-left: 32px;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 7px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(to bottom,
+            var(--accent-start),
+            var(--accent-end),
+            transparent);
+    border-radius: 1px;
+}
+
+.timelineItem {
+    position: relative;
+}
+
+.timelineDot {
+    position: absolute;
+    left: -32px;
+    top: 28px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: var(--gradient-accent);
+    border: 3px solid var(--bg-primary);
+    box-shadow: 0 0 12px var(--accent-glow);
+    z-index: 1;
+}
+
+.card {
+    padding: 28px 32px;
+    transition: all var(--transition-default);
+}
+
+.card:hover {
+    background: var(--bg-card-hover);
+    border-color: var(--accent-start);
+    transform: translateX(4px);
+    box-shadow: 0 8px 30px var(--accent-glow);
+}
+
+.cardHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 16px;
+    margin-bottom: 12px;
+    flex-wrap: wrap;
+}
+
+.role {
+    font-size: 1.15rem;
+    color: var(--text-primary);
+    margin-bottom: 4px;
+}
+
+.company {
+    font-size: 0.95rem;
+    color: var(--accent-start);
+    font-weight: 500;
+}
+
+.period {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    background: var(--bg-card);
+    padding: 4px 14px;
+    border-radius: var(--radius-full);
+    border: 1px solid var(--border-subtle);
+    white-space: nowrap;
+}
+
+.description {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    margin-bottom: 16px;
+}
+
+.achievements {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.achievements li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
+.achievementIcon {
+    color: var(--accent-start);
+    font-size: 0.85rem;
+    flex-shrink: 0;
+}
+
+/* Desktop */
+@media (min-width: 800px) {
+    .timeline {
+        padding-left: 48px;
+    }
+
+    .timeline::before {
+        left: 7px;
+    }
+
+    .timelineDot {
+        left: -48px;
+    }
+
+    .card {
+        padding: 32px 40px;
+    }
+}
