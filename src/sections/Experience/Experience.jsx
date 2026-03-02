@@ -2,9 +2,21 @@ import styles from './ExperienceStyles.module.css';
 
 const experiences = [
     {
+        role: 'Software Engineer',
+        company: 'Softnet Technology',
+        period: '2025 — Present',
+        description:
+            'Building and maintaining enterprise-grade software solutions. Working across the full stack with modern technologies to deliver scalable, high-quality products.',
+        achievements: [
+            'Developing full-stack applications with modern frameworks',
+            'Collaborating on enterprise system architecture',
+            'Contributing to CI/CD and DevOps workflows',
+        ],
+    },
+    {
         role: 'Full Stack Software Engineer',
         company: 'VitoTech Solutions',
-        period: '2023 — Present',
+        period: '2023 — 2024',
         description:
             'Leading full-stack development of enterprise web and mobile applications. Building scalable services with Spring Boot, React, and Flutter. Architecting cloud solutions on AWS and Firebase.',
         achievements: [
